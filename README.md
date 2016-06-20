@@ -18,3 +18,5 @@ bundle clean --force
 
 
 Run: bundle exec jekyll serve --baseurl=""
+
+If you change the repository name, make sure that you change baseurl in _config.yml
