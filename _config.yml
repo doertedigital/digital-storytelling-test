@@ -20,15 +20,45 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+# Language settings
+title:
+  de: Digital Storytelling
+  en: Digital storytelling
+index:
+  en: index-en.html
+  de: index.html
+footer-notice:
+  de: "Produziert mit MLAB-Topic-Xplorer"
+  en: "Made with MLAB-Topic-Xplorer"
+#Translation Storytellings
+t:
+  en:
+    meta-articles: "Meta articles"
+  de:
+    meta-articles: "Meta-Artikel"
 
 # thanks to jhackt!
 collections:
-  meta_articles:
+  articles_meta:
     output: true
     permalink: /meta/:path/
+  articles_tool:
+    output: true
+    permalink: /tool/:path/
+  articles_practise:
+    output: true
+    permalink: /practise/:path/
 
 defaults:
   - scope:
-      type: meta_articles
+      type: articles_meta
     values:
-      layout: default
+      layout: article
+  - scope:
+      type: articles_tool
+    values:
+      layout: article
+  - scope:
+      type: articles_practise
+    values:
+      layout: article
