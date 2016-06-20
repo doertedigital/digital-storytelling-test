@@ -1,4 +1,4 @@
 # digital-storytelling-test
 
 Live-Preview: https://medialiteracylab.github.io/digital-storytelling-test/
-s
+(if forked: https://<your-username>.github.io/digital-storytelling-test/)
