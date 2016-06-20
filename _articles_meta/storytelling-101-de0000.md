@@ -1,10 +1,8 @@
 ---
-title: "Nichtigkeit des Seins"
+title: Storytelling 105
 lang: de
-ref: nonexistence-of-live
-authors:
-  - ref: mandrasch
-  - ref: jvitek
+ref: storytelling-105
+feature_image: /images/pic03.jpg
 ---
 
 Hallo META-Article nr. 1

@@ -23,12 +23,26 @@ markdown: kramdown
 
 # thanks to jhackt!
 collections:
-  meta_articles:
+  articles_meta:
     output: true
     permalink: /meta/:path/
+  articles_tool:
+    output: true
+    permalink: /tool/:path/
+  articles_practise:
+    output: true
+    permalink: /practise/:path/
 
 defaults:
   - scope:
-      type: meta_articles
+      type: articles_meta
     values:
-      layout: default
+      layout: article
+  - scope:
+      type: articles_tool
+    values:
+      layout: article
+  - scope:
+      type: articles_practise
+    values:
+      layout: article
