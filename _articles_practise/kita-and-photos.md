@@ -1,7 +1,7 @@
 ---
-title: The art of storytelling
-lang: en
-ref: art-of-storytelling
+title: Kita und Fotogeschichten
+lang: de
+ref: kita-and-photos
 feature_image: '/images/700x300.png'
 ---
 

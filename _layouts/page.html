@@ -1,37 +1,14 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-{% include head.html %}
-
-<body class="no-sidebar">
-    <div id="page-wrapper">
-
-        {% include header.html %}
-
-        <!-- Main -->
-        <div id="main-wrapper">
-            <div class="container">
-                <div id="content">
-
-                    <!-- Content -->
-
-                    <article>
-                        <h2>{{ page.title }}</h2>
-
-                        Content: {{ page.content }}
-
-
-                    </article>
-                </div>
-            </div>
-
-        </div>
-
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">{{ page.title }}
+            <small>{{ page.subtitle }}</small>
+        </h1>
+        {{ page.content }}
     </div>
-    <!-- eo #page-wrapper -->
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+</div>
+<!-- /.row -->

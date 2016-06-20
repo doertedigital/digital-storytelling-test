@@ -1,7 +1,7 @@
 ---
-title: The art of storytelling
+title: Twine (interactive fiction)
 lang: en
-ref: art-of-storytelling
+ref: twine
 feature_image: '/images/700x300.png'
 ---
 

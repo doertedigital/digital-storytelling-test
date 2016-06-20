@@ -1,0 +1,162 @@
+
+
+
+
+
+
+
+                    <!-- Content -->
+                    <!-- Main -->
+                    <div id="main-wrapper">
+                        <div class="container">
+                            <div id="content">
+
+                                <div class="page-translation" style="text-align:right;">
+                                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {% for post in posts %} <a href="{{ post.url }}" class="{{ post.lang }}">{{post.lang}}</a> {% endfor %} {% assign pages=site.pages | where:"ref", page.ref | sort:
+                                    'lang' %} {% for page in pages %} <a href="{{ page.url }}" class="{{ page.lang }}">{{page.lang}}</a> {% endfor %}
+                                </div>
+
+                                <article>
+
+
+
+                      {{ content | markdownify }}
+
+                    </article>
+                </div>
+            </div>
+        </div>
+
+
+
+          <!-- Meta articles -->
+        	<div class="container">
+          {% assign meta_articles_lang = site.articles_meta | where:"lang", page.lang %}
+          <div id="features-wrapper">
+            <div class="row">
+              <div class="4u 12u(medium)">
+                <!-- 2DO: translate -->
+              <h3 id="meta-articles">Meta-Articles</h3>
+              </div>
+            </div>
+              <div class="row">
+                  {% for article in meta_articles_lang %}
+                  <div class="4u 12u(medium)">
+                      <!-- Box -->
+                      <section class="box feature">
+                          <a href="{{article.url}}" class="image featured"><img src="{{ site.github.url }}{{ article.feature_image}}" alt="" /></a>
+                          <div class="inner">
+                              <header>
+                                  <h2><a href="{{article.url}}">{{ article.title }}</a></h2>
+                                  <p>2DO: SUBTITLE</p>
+                              </header>
+                              <p>2DO: EXCERPT</p>
+                          </div>
+                      </section>
+                  </div>
+                  {% endfor %}
+
+                  <!-- 2DO: translate -->
+                  <!-- <p class="clear"><a href="">All articles</a></p> -->
+              </div>
+            </div>
+          </div>
+          <!-- eo meta articles -->
+
+
+          <!-- Tool articles -->
+        	<div class="container">
+          {% assign tool_articles_lang = site.articles_tool | where:"lang", page.lang %}
+          <div id="features-wrapper">
+            <div class="row">
+              <div class="4u 12u(medium)">
+                <!-- 2DO: translate -->
+              <h3 id="tool-articles">Tool-Articles</h3>
+              </div>
+            </div>
+              <div class="row">
+                  {% for article in tool_articles_lang %}
+                  <div class="4u 12u(medium)">
+                      <!-- Box -->
+                      <section class="box feature">
+                          <a href="{{article.url}}" class="image featured"><img src="{{ site.github.url }}{{ article.feature_image}}" alt="" /></a>
+                          <div class="inner">
+                              <header>
+                                  <h2><a href="{{article.url}}">{{ article.title }}</a></h2>
+                                  <p>2DO: SUBTITLE</p>
+                              </header>
+                              <p>2DO: EXCERPT</p>
+                          </div>
+                      </section>
+                  </div>
+                  {% endfor %}
+
+                  <!-- 2DO: translate -->
+                  <!-- <p class="clear"><a href="">All articles</a></p> -->
+              </div>
+            </div>
+          </div>
+          <!-- eo meta articles -->
+
+
+        <div id="features-wrapper">
+					<div class="container">
+						<div class="row">
+
+
+
+
+
+
+
+
+							<div class="4u 12u(medium)">
+
+
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
+										<div class="inner">
+											<header>
+												<h2>Put something here</h2>
+												<p>Maybe here as well I think</p>
+											</header>
+											<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt=""></a>
+										<div class="inner">
+											<header>
+												<h2>An interesting title</h2>
+												<p>This is also an interesting subtitle</p>
+											</header>
+											<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
+										<div class="inner">
+											<header>
+												<h2>Oh, and finally ...</h2>
+												<p>Here's another intriguing subtitle</p>
+											</header>
+											<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>

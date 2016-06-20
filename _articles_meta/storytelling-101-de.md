@@ -2,7 +2,7 @@
 title: Storytelling 101
 lang: de
 ref: storytelling-101
-feature_image: /images/pic03.jpg
+feature_image: '/images/700x300.png'
 ---
 
 Hallo META-Article nr. 1
